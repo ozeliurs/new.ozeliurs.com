@@ -1,0 +1,41 @@
+{% extends "site.html" %}
+{% block header %}<link rel="stylesheet" href="{{ url_for("static", filename="css/resume.css") }}">{% endblock %}
+{% block content %}
+    <section class="hero">
+        <div class="row">
+            <div class="col-8">
+                <h1>BILLY</h1>
+                <h1>Maxime</h1>
+                <hr>
+                <h2>@Ozeliurs</h2>
+            </div>
+            <div class="col-4 center">
+                <img src="{{ url_for("static", filename="media/pp.webp") }}" alt="">
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="row">
+            <div class="col-4 meta">
+                <h3><strong>{{ birthDateTitle }}</strong></h3>
+                <p>{{ birthDate }}</p>
+                <br>
+                <h3><strong>{{ emailTitle }}</strong></h3>
+                <p>{{ email }}</p>
+                <br>
+                <h3><strong>{{ phoneTitle }}</strong></h3>
+                <p>{{ phone }}</p>
+                <br>
+                <h3><strong>{{ locationTitle }}</strong></h3>
+                <p>{{ location }}</p>
+                <br>
+                <h3><strong>Github</strong></h3>
+                <p><a href="https://github.com/ozeliurs">Ozeliurs</a></p>
+
+            </div>
+            <div class="col-8">
+                {{ content | safe }}
+            </div>
+        </div>
+    </main>
+{% endblock %}

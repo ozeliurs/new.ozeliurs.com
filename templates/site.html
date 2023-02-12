@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ozeliurs - {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/style.css") }}">
+    {% block header %}{% endblock %}
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Projets</a></li>
+        <li><a href="/guides">Guides</a></li>
+    </ul>
+</nav>
+{% block content %}{% endblock %}
+<footer></footer>
+</body>
+</html>

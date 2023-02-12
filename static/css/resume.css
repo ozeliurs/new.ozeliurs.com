@@ -1,0 +1,136 @@
+ul {
+    list-style-type: none;
+}
+
+p {
+    margin: 0;
+}
+
+code {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #272343;
+}
+
+.meta {
+    margin: 10px 20px 10px 0;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 20px;
+}
+
+.meta p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-weight: 800;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+strong {
+    font-weight: 900;
+}
+
+.hero {
+    background-color: var(--hero-bg-color);
+    color: var(--hero-text-color);
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 15vh;
+    margin: 0;
+    text-align: right;
+}
+
+.hero h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-size: 10vh;
+    margin: 0;
+    text-align: right;
+}
+
+.hero img {
+    height: 50vh;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.hero:after {
+    content: " ";
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 36px;
+    background: linear-gradient(var(--hero-bg-color) 0%, transparent 0%), linear-gradient(135deg, var(--bg-color) 33.33%, transparent 33.33%) 0 0%, var(--bg-color) linear-gradient(45deg, var(--bg-color) 33.33%, var(--hero-bg-color) 33.33%) 0 0%;
+    background: -webkit-linear-gradient(var(--hero-bg-color) 0%, transparent 0%), -webkit-linear-gradient(135deg, var(--bg-color) 33.33%, transparent 33.33%) 0 0%, var(--bg-color) -webkit-linear-gradient(45deg, var(--bg-color) 33.33%, var(--hero-bg-color) 33.33%) 0 0%;
+    background: -o-linear-gradient(var(--hero-bg-color) 0%, transparent 0%), -o-linear-gradient(135deg, var(--bg-color) 33.33%, transparent 33.33%) 0 0%, var(--bg-color) -o-linear-gradient(45deg, var(--bg-color) 33.33%, var(--hero-bg-color) 33.33%) 0 0%;
+    background: -moz-linear-gradient(var(--hero-bg-color) 0%, transparent 0%), -moz-linear-gradient(135deg, var(--bg-color) 33.33%, transparent 33.33%) 0 0%, var(--bg-color) -moz-linear-gradient(45deg, var(--bg-color) 33.33%, var(--hero-bg-color) 33.33%) 0 0%;
+    background-repeat: repeat-x;
+    background-size: 0px 100%, 9px 27px, 9px 27px;
+}
+
+main ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main ul li {
+    margin-left: 15px;
+    position: relative;
+    padding-left: 5px;
+}
+
+main ul li::before {
+    content: " ";
+    position: absolute;
+    width: 1px;
+    background-color: #000;
+    top: 5px;
+    bottom: -12px;
+    left: -10px;
+}
+
+main body > ul > li:first-child::before {
+    top: 12px;
+}
+
+main ul li:not(:first-child):last-child::before {
+    display: none;
+}
+
+main ul li:only-child::before {
+    display: list-item;
+    content: " ";
+    position: absolute;
+    width: 1px;
+    background-color: #000;
+    top: 5px;
+    bottom: 7px;
+    height: 7px;
+    left: -10px;
+}
+
+main ul li::after {
+    content: " ";
+    position: absolute;
+    left: -10px;
+    width: 10px;
+    height: 1px;
+    background-color: #000;
+    top: 12px;
+}
