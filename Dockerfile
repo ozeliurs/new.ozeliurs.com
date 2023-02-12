@@ -11,4 +11,4 @@ RUN apt-get update && apt-get install -y whois iputils-ping
 
 EXPOSE 5000
 
-CMD ["gunicorn", "-b", ":5000", "-w", "4", "main:app"]
+CMD ["gunicorn", "-b", ":5000", "-w", "4", "app:app"]
