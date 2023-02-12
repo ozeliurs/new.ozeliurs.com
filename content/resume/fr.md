@@ -1,4 +1,5 @@
 ---
+title: CV
 birthDateTitle: Date de naissance
 birthDate: 12 mars 2000
 locationTitle: Localisation

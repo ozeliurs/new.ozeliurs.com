@@ -1,4 +1,5 @@
 ---
+title: Resume
 birthDateTitle: Birth date
 birthDate: 2000-03-12
 locationTitle: Location
