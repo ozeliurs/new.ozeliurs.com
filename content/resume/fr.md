@@ -94,6 +94,11 @@ phone: +33 6 95 92 32 10
 
 ## **Réalisations**
 
+### **Hackaton What06**, Sophia Antipolis
+`Janvier 2023`
+
+- Gagnant du prix de l'Innovation avec le projet Tech4Elles
+
 ### **Permis de Conduire**, Grasse - Catégorie B
 `Juin 2020`
 
