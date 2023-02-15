@@ -94,6 +94,11 @@ phone: +33 6 95 92 32 10
 
 ## **Accomplishments**
 
+### **What06** Hackaton, Sophia Antipolis
+`January 2023`
+
+- Winner of the Innovation Award with the Tech4Elles project.
+
 ### **Driver's license**, Grasse - Category B
 `June 2020`
 
